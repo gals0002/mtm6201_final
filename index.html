@@ -25,10 +25,10 @@
       <div class="dropdown">
       <button class="d-md-none d-block btn btn-primary circle justify-content-center align-content-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="my-auto mx-auto" src="images/hamburger.svg" alt="hamburger menu icon"></button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Dashboard</a></li>
-        <li><a class="dropdown-item" href="#">Map</a></li>
-        <li><a class="dropdown-item" href="index.html">My Agenda</a></li>
-        <li><a class="dropdown-item" href="#"><span class="material-symbols-outlined">settings</span></a></li>
+        <li><a class="dropdown-item" href="#" aria-label="go to the dashboard page">Dashboard</a></li>
+        <li><a class="dropdown-item" href="#" aria-label="go to the map page">Map</a></li>
+        <li><a class="dropdown-item" href="index.html" aria-label="go to the agenda page">My Agenda</a></li>
+        <li><a class="dropdown-item" href="#" aria-label="go to the settings"><span class="material-symbols-outlined">settings</span></a></li>
       </ul>
     </div>
       <div class="void d-block"></div>
@@ -46,14 +46,14 @@
         </ul>
       </nav>
     </header>
-    <h1 class="h1 text-center m-4 tracking-in-expand">Nurse page</h1>
+    <h1 role="heading" class="h1 text-center m-4 tracking-in-expand">Nurse page</h1>
     <main class="row">
-      <div id="profile" class="col-12 col-lg-6 d-flex flex-row justify-content-center p-3">
+      <div id="profile" class="col-12 col-lg-6 d-flex flex-row justify-content-center p-3" itemscope itemtype="https://schema.org/Person">
       <img src="images/icon_big.svg" class="order-1" alt="">
       <div class="d-flex flex-column order-0 order-lg-2">
-      <h2>Jonathan Doe</h2>
-      <p>Responsible for rooms: <br><a href="#">31, </a><a href="#">32, </a><a href="#">33, </a><a href="#">55</a></p>
-      <p>Upcoming: <br><a href="#">Room 33, </a><a href="#">Medication</a></p>
+      <h2 itemprop="givenName">Jonathan Doe</h2>
+      <p itemprop="potentialAction">Responsible for rooms: <br><a href="#">31, </a><a href="#">32, </a><a href="#">33, </a><a href="#">55</a></p>
+      <p itemprop="potentialAction">Upcoming: <br><a href="#">Room 33, </a><a href="#">Medication</a></p>
       </div>
     </div>
     <div id="location" class="d-none d-md-flex flex-column col-md-6 order-lg-2 justify-content-md-evenly align-content-md-center">
